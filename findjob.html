@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Find a Job</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: blue;
+    }
+
+    .header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 30px;
+      background: url('search-icon.png') no-repeat center / cover;
+      margin-right: 10px;
+    }
+
+    h1 {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+    }
+
+    .job-search-container {
+      text-align: center;
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in;
+    }
+
+    textarea {
+      height: 100px;
+      object-position: auto;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+
+    /* Add your own logo as 'search-icon.png' in the same directory as this HTML file *//*alt="jobsearch"*/
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align:center;">Job Board </h1>
+  <div class="header">
+    <div class="logo"></div>
+    <h1>Find a Job</h1>
+  </div>
+  <div class="job-search-container">
+    <div class="jobsearch">
+      <img src="findjob.jpeg">
+    </div>
+
+    <p>Job search form or content goes here...</p>
+    <label for="message">Search:</label>
+    <textarea id="message" name="message" required></textarea>
+  </div>
+</body>
+
+</html>

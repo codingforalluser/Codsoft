@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blog Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: blue;
+    }
+
+    .blog-container {
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .blog-post {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      transition: all 0.3s;
+    }
+
+    .blog-post:hover {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .blog-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .blog-content {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center;">Job Board </h1>
+  <div class="blog-container">
+    <div class="blog-post">
+      <h2 class="blog-title">Example Blog Post 1</h2>
+      <p class="blog-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+        dapibus diam. Sed nisi.
+      </p>
+    </div>
+    <div class="blog-post">
+      <h2 class="blog-title">Example Blog Post 2</h2>
+      <p class="blog-content">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+    <!-- More blog posts can be added similarly -->
+  </div>
+</body>
+
+</html>

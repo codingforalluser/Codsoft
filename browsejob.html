@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Browse Jobs</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: blue;
+    }
+
+    .job-container {
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .job-post {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      transition: all 0.3s;
+    }
+
+    .job-post:hover {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .job-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .job-info {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center;">Job Board </h1>
+  <div class="job-container">
+    <div class="job-post">
+      <h2 class="job-title">Job Title 1</h2>
+      <p class="job-info">Company: ABC Corporation</p>
+      <p class="job-info">Location: City, Country</p>
+      <p class="job-info">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="job-post">
+      <h2 class="job-title">Job Title 2</h2>
+      <p class="job-info">Company: XYZ Inc.</p>
+      <p class="job-info">Location: Another City, Country</p>
+      <p class="job-info">Description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+    </div>
+    <!-- More job posts can be added similarly -->
+  </div>
+</body>
+
+</html>
